@@ -6,8 +6,11 @@ import { AppComponent } from "./app.component";
 import { GraphQLModule } from "./graphql.module";
 import { HttpClientModule } from "@angular/common/http";
 
+import { NavComponent } from "./nav/nav.component";
+import { ArticlesComponent } from "./articles/articles.component";
+
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavComponent, ArticlesComponent],
   imports: [BrowserModule, AppRoutingModule, GraphQLModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
