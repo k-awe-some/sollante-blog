@@ -1,0 +1,7 @@
+<p>article works!</p>
+<h2>{{ article?.title }}</h2>
+<img
+  src="{{ environment?.apiURL }}{{ article?.image?.url }}"
+  [alt]="article.title"
+/>
+<p>{{ article.content }}</p>

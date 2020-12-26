@@ -1,9 +1,15 @@
 <p>articles works!</p>
-<div *ngFor="let article of articles">
-  <h3>{{ article.title }}</h3>
-  <img
-    src="{{ environment.apiURL }}{{ article.image.url }}"
-    [alt]="article.title"
-  />
-  <p>{{ article.content }}</p>
-</div>
+<a
+  *ngFor="let article of articles"
+  routerLink="/article/{{ article.id }}"
+  routerLinkActive="active"
+>
+  <div>
+    <h3>{{ article.title }}</h3>
+    <img
+      src="{{ environment.apiURL }}{{ article.image.url }}"
+      [alt]="article.title"
+    />
+    <p>{{ article.content }}</p>
+  </div>
+</a>
