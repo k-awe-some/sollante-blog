@@ -4,4 +4,4 @@
   src="{{ environment?.apiURL }}{{ article?.image?.url }}"
   [alt]="article.title"
 />
-<p>{{ article.content }}</p>
+<markdown [data]="article.content"></markdown>
